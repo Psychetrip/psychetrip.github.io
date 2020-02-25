@@ -1,0 +1,381 @@
+@font-face
+{
+	font-family: simpson;
+	src: url('font/simpsonfont.ttf');
+}
+
+@font-face
+{
+	font-family: chunk;
+	src: url('font/chunk.otf');
+}
+
+
+body
+{
+	background-color: #ECEFF1;
+	font-family: times, sans-serif;
+	margin: 0px;
+	font-size: 1.1em;
+}
+
+#bloc_page
+{
+	width: 50%;
+	margin: auto;
+	display: flex;
+}
+
+/*Main*/
+main
+{
+	display: flex;
+	flex-direction: column;
+	margin: 0px 50px 0px 50px;
+	width: 70%;
+}
+
+main h2
+{
+	font-size: 1.3em;
+}
+
+.right_titles
+{
+	border-bottom: 2px solid rgba(21,101,192 ,1);
+	padding: 0px 0px 10px 10px;
+}
+/*Header*/
+h1
+{
+	font-size: 3em;
+	font-family: chunk;
+	letter-spacing: 0.3em;
+	text-align: center;
+}
+
+h3
+{
+	color: #FFD90F;
+	font-family: simpson;
+	letter-spacing: 0.1em;
+	font-size: 2em;
+	text-align: center;
+}
+
+.o
+{
+	color: rgba(21,101,192 ,1);
+}
+
+.jaune
+{
+	text-decoration: underline #FFD90F;
+}
+
+section
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.petitre
+{
+	font-weight: bold;
+}
+
+/*Section 1*/
+#section1 i
+{
+	margin-right: 25px;
+}
+
+#form1, #form2
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#annee1form, #annee2form
+{
+	width: 35%;
+	display: flex;
+	flex-direction: row;
+}
+
+#texte1form, #texte2form
+{
+	width: 65%;
+}
+
+/*Section 2*/
+#section2 i
+{
+	margin-right: 25px;
+}
+
+#pro1, #pro2, #pro3
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#annee1pro, #annee2pro, #annee3pro
+{
+	width: 35%;
+	display: flex;
+	flex-direction: row;
+}
+
+#texte1pro, #texte2pro, #texte3pro
+{
+	width: 65%;
+}
+
+/*Section 3*/
+#section3 i
+{
+	margin-right: 25px;
+}
+
+#burns
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#burns1, #burns2
+{
+	width: 50%;
+}
+
+/*Div Gauche*/
+#gauche
+{
+	width: 30%;
+	min-width: 200px;
+	background-color: rgba(21,101,192 ,0.5);
+}
+
+.left_titles
+{
+	color: rgba(21,101,192 ,1);
+	background-color: rgba(49,27,146 ,0.76);
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+}
+
+/*Photo*/
+#photo
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+	height: 15%;
+}
+
+#gauche #photo img
+{
+	border-radius: 100%;
+}
+
+
+/*Nav*/
+nav
+{
+	height: 20%;
+}
+
+nav ul
+{
+	list-style:none;
+	margin-left: 15px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+}
+
+nav ul li
+{
+	margin-bottom: 15px;
+}
+
+
+/*Aside*/
+aside
+{
+	height: 45%;
+}
+
+aside p
+{
+	text-align: justify;
+	margin: 10px;
+	padding: 5px;
+}
+
+
+/*Footer*/
+footer
+{
+	height: 20%;
+}
+
+#icones
+{
+	margin: 10px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#icones i
+{
+	padding: 10px;
+}
+
+@media all and (max-width: 1024px)
+{
+	#bloc_page
+	{
+		width: auto;
+	}
+}
+
+@media all and (max-width: 800px)
+{
+	#bloc_page
+	{
+		width: auto;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	#gauche
+	{
+		width: auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		border-radius: 10%;
+	}
+
+	#gauche h2
+	{
+		border-style: outset;
+	}
+
+	#photo
+	{
+		display: flex;
+		align-items: flex-start;
+		width: 768px;
+	}
+
+	nav
+	{
+		order: 3;
+		padding-left: 50px;
+	}
+
+	aside
+	{
+		padding-bottom: 30px;
+	}
+
+	footer
+	{
+		width: 40%;
+		padding-left: 20px;
+	}
+}
+
+@media all and (max-width: 515px)
+{
+	body
+	{
+		font-size: 1em;
+	}
+
+	#bloc_page
+	{
+		width: auto;
+	}
+
+	#annee1form, #annee2form, #annee1pro, #annee2pro, #annee3pro
+	{
+		padding-right: 10px;
+	}
+
+
+	#section1 i, #section2 i, #section3 i
+	{
+		display: none;
+	}
+
+	#burns1
+	{
+		padding-right: 10px;
+		width: auto;
+	}
+
+	#burns2
+	{
+		width: auto;
+	}
+
+	aside
+	{
+		padding-bottom: 0px;
+	}
+
+	nav h2, footer h2
+	{
+		font-size: 0.9em;
+	}
+
+	nav
+	{
+		padding-left: 0px;
+	}
+
+	footer
+	{
+		padding-left: 0px;
+	}
+}
+
+@media all and (max-width: 350px)
+{
+	footer
+	{
+		width: 100%;
+	}
+
+	nav
+	{
+		width: 100%;
+	}
+
+	nav ul
+	{
+		width: auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	nav ul li
+	{
+		padding-right: 5px;
+	}
+}
+
+@media all and (max-width: 250px)
+{
+	#form1, #form2, #pro1, #pro2, #pro3
+	{
+		flex-direction: column;
+	}
+}
+

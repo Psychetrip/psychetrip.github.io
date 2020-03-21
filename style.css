@@ -275,7 +275,18 @@ footer
 	nav
 	{
 		order: 3;
-		padding-left: 50px;
+		width: 100%;
+	}
+
+	nav ul
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	nav ul li
+	{
+		margin: 20px;
 	}
 
 	aside
@@ -285,8 +296,7 @@ footer
 
 	footer
 	{
-		width: 40%;
-		padding-left: 20px;
+		width: 100%;
 	}
 }
 
